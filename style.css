@@ -24,6 +24,7 @@ body{
     background-position: top;
     font-family: 'WorkSans', sans-serif;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .card{
@@ -110,6 +111,7 @@ p{
     body{
         background-image: url(./assets/images/background-pattern-mobile.svg);
         min-width: 375px;
+        overflow-y: auto;
     }
 
     .card{
