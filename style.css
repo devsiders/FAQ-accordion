@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-attachment: fixed;
+    background-color: var(--Light-pink);
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-position: top;
+    font-family: 'WorkSans', sans-serif;
+    font-size: 16px;
+}
+
+.card{
+    background-color: var(--White);
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2.5px rgba(0, 0, 0, 0.1);
+}
+
+.card-tittle{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+
+.card-tittle > img{
+    width: 35px;
+    margin-right: 20px;
+}
+
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--Dark-purple);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.header:hover h3{
+    color: #A445F7;
+}
+
+.header > h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Dark-purple);
+}
+
+.header > img{
+    width: 23px;
+}
+
+p{
+    display: none;
+}
+
+.icon-minus{
+    display: none;
+}
+
+.card-item > p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--Grayish-purple);
+    transition: max-height 200ms ease;
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+        min-width: 375px;
+    }
+
+    .card{
+        min-width: 85%;
+    }
+
+    .card-tittle > img{
+        width: 23px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .card-body{
+        margin-top: 0.313rem;
+    }
+
+}
