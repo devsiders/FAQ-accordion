@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion
 
-![Design preview for the FAQ accordion coding challenge](./design/desktop-preview.jpg)
+![image](https://github.com/user-attachments/assets/dde9f9bc-9d06-4184-91fb-57bdee27cf7b)
 
 ## Welcome! 👋
 
